@@ -34,8 +34,17 @@
 .layer footer a span {padding: 0 24px; overflow: hidden; white-space: nowrap; word-break: break-all; text-overflow: ellipsis;}
 
 /* width : 가변, min-width : 고정 */
-.test {width: 343px; max-height: 605px; height: 100%; box-sizing: border-box;  display: flex; flex-direction: column;}
-.test > main {overflow: auto; flex: 1;}
+.schoolSearch {width: 343px; max-height: 605px; height: 100%; box-sizing: border-box;  display: flex; flex-direction: column;}
+.schoolSearch > main {overflow: auto; flex: 1;}
+.schoolSearch {
+	& main {
+		.search {border: 1px solid #000;}
+		a {border: 1px solid #000;
+		&:hover {background: #000;}
+		&.active {background: #000; color: #fff;}
+		}
+	}
+}
 
 /* .alert */
 .alert {width: 343px;}
