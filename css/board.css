@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+/* .boardWriteType01 */
+.boardWriteType01 {}
+.boardWriteType01 dl {}
+.boardWriteType01 dl ~ dl {margin-top: 24px;}
+.boardWriteType01 dt {font-weight: 700;}
+.boardWriteType01 dt strong {color: var(--error); margin-right: 2px;}
+.boardWriteType01 dd {margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap}
+.boardWriteType01 dd {
+	 input[type="text"], input[type="number"], select, textarea {flex: 1;}
+}
+.boardWriteType01 dd.dateCheck ul {flex: 1; display: flex; flex-direction: column; padding: 16px; border: 1px solid var(--bd02); border-radius: 8px;}
+.boardWriteType01 dd.dateCheck li {}
+.boardWriteType01 dd.dateCheck li ~ li {margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--bd02);}
+.boardWriteType01 dd.dateCheck li .label {font-size: 13px; color: var(--tc02); width: 100%; line-height: 1.4; gap: 12px;}
+.boardWriteType01 dd.dateCheck li .label .txt {flex: 1;}
+.boardWriteType01 dd.dateCheck li .label .txt span {display: block;}
+.boardWriteType01 dd.dateCheck li .label .txt .strong {font-size: 15px; color: var(--defaultColor);}
+.boardWriteType01 dd .select01 {flex: 0 1 auto; width: 40%;}
+.boardWriteType01 dd p.error {font-size: 14px; min-width: 100%; margin-top: 8px; color: var(--error); padding-left: 22px; background: url(../images/board/ic_error.svg) 0 center no-repeat;}
+.boardWriteType01 .notice {margin-top: 32px; padding: 24px; background: var(--bg02); border-radius: 8px;}
+.boardWriteType01 .notice h3 {font-size: 15px; font-weight: 700; color: var(--tc01); margin-bottom: 16px;}
+.boardWriteType01 .notice ul li {font-size: 14px; color: var(--tc02); padding-left: 10px; position: relative;}
+.boardWriteType01 .notice ul li:after {content: ''; position: absolute; top: 7px; left: 0; width: 4px; height: 4px; border-radius: 50%; background: var(--bd01);}
+.boardWriteType01 .notice ul li ~ li {margin-top: 8px;}
+.boardWriteType01 .checkArea li {margin-top: 8px;}
+.boardWriteType01 .checkArea li ~ li {margin-top: 16px;}
+.boardWriteType01 .textarea {height: 134px; width: 100%;}
+
+
+@media (max-width: 1024px) {
+	.boardWriteType01 dd .select01 {flex: 1; width: 100%;}
+}
+
+/* .applicationCheck */
+.applicationCheck {}
+.applicationCheck h3 {font-size: 18px; font-weight: 700; display: flex; align-items: center; border-top: 1px solid var(--bd02); padding-top: 24px; margin-bottom: 20px; gap: 16px;}
+.applicationCheck h3 ~ h3 {margin-top: 32px;}
+.applicationCheck h3 a {font-size: 13px; font-weight: 500; text-decoration: underline; margin-left: auto; color: var(--tc02);}
+.applicationCheck dl {display: flex; gap: 16px;}
+.applicationCheck dl ~ dl {margin-top: 16px;}
+.applicationCheck dl dt {font-size: 15px; color: var(--tc01);}
+.applicationCheck dl dd {font-size: 15px; margin-left: auto; text-align: right; word-break: keep-all;}
+.applicationCheck .notice {padding: 24px; background: var(--bg02); border-radius: 8px; margin-top: 32px;}
+.applicationCheck .notice p {color: var(--tc01); padding-left: 22px; background: url(../images/board/ic_app_notice.svg) 0 2px no-repeat; word-break: keep-all;}
+
+/*  */
+#container.applicationCompletion {padding: 32px 16px; box-sizing: border-box; display: flex; flex-direction: column; height: calc(var(--100vh) - var(--footerBtnHeight));}
+#container.applicationCompletion section {margin: auto;}
+#container.applicationCompletion section h2 {font-size: 24px; font-weight: 700; padding-top: 72px; text-align: center; position: relative;}
+#container.applicationCompletion section h2:after {content: ""; position: absolute; top: 0; left: 50%; transform: translate(-50%, 0); width: 56px; height: 56px; background: var(--ac01) url(../images/board/ic_completion.svg) center center no-repeat; border-radius: 50%;}
+
+	/* .listType01 */
+.listType01 {}
+
+/* .listType02 */
+.listType02 {}
+
+/* .detailType01 */
+.detailType01 {}
+
+/* .detailType02 */
+.detailType01 {}
+
+/* .paging */
+.paging {}

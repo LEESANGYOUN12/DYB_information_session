@@ -1,0 +1,311 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi">
+	<!-- <meta name="theme-color" content="#e60039" /> -->
+	<title>SKIN</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	<!--<script type="text/javascript" src="../js/jquery-3.7.0.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.min.js"></script>-->
+	<script type="text/javascript" src="../js/default.js"></script>
+	<script type="text/javascript" src="../js/popup.js"></script>
+</head>
+
+<!--
+body class="creo"
+body class="lanpus"
+body class="mata"
+-->
+<body>
+	<!-- #wrap -->
+	<div id="wrap">
+		<header id="header" class="outer">
+			<div class="inner">
+				<h1>로고</h1>
+			</div>
+		</header>
+
+		<hr>
+
+		<!-- #container -->
+		<main id="container">
+			<div class="outer">
+				<div class="inner">
+					<div class="btnWrap">
+						<a href="#none" class="btnStyle" onclick="layerOpen('layer', event)">레이어 오픈㎤㎤㎤⅕⅕</a>
+						<a href="#none" class="btnStyle" onclick="layerOpen('layer2', event)">레이어 오픈2</a>
+						<a href="#none" class="btnStyle" onclick="layerOpen('layer3', event)">레이어 오픈3</a>
+					</div>
+					<div class="btnWrap mt">
+						<a href="#none" class="btnStyle wide bd" onclick="layerOpen('layer', event)">레이어 오픈1</a>
+						<a href="#none" class="btnStyle wide bd" onclick="layerOpen('layer2', event)">레이어 오픈2</a>
+						<a href="#none" class="btnStyle wide bd" onclick="layerOpen('layer3', event)">레이어 오픈3</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="outer">
+				<div class="inner">
+					<div class="btnWrap">
+						<a href="#none" class="btnStyle em" onclick="layerOpen('layer', event)">레이어 오픈1</a>
+						<a href="#none" class="btnStyle em" onclick="layerOpen('layer2', event)">레이어 오픈2</a>
+						<a href="#none" class="btnStyle em" onclick="layerOpen('layer3', event)">레이어 오픈3</a>
+					</div>
+					<div class="btnWrap mt">
+						<a href="#none" class="btnStyle wide em bd" onclick="layerOpen('layer', event)">레이어 오픈1</a>
+						<a href="#none" class="btnStyle wide em bd" onclick="layerOpen('layer2', event)">레이어 오픈2</a>
+						<a href="#none" class="btnStyle wide em bd" onclick="layerOpen('layer3', event)">레이어 오픈3</a>
+						<a href="#none" class="btnStyle wide em bd" onclick="layerOpen('layer3', event)">레이어 오픈3</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="outer">
+				<div class="inner">
+					<div style="padding:10px;">
+						<label class="label"><input type="checkbox"><span class="txt">체크박스</span></label>
+						<label class="label"><input type="checkbox" checked><span class="txt">체크박스 체크</span></label>
+						<label class="label"><input type="checkbox" disabled><span class="txt">체크박스 01</span></label>
+						<label class="label"><input type="checkbox" checked disabled><span class="txt">체크박스02</span></label>
+					</div>
+					<div style="padding:10px;">
+						<label class="label"><input type="radio"><span class="txt">라디오버튼</span></label>
+						<label class="label"><input type="radio" checked><span class="txt">라디오버튼 체크</span></label>
+						<label class="label"><input type="radio" disabled><span class="txt">라디오버튼 01</span></label>
+						<label class="label"><input type="radio" checked disabled><span class="txt">라디오버튼</span></label>
+					</div>
+				</div>
+			</div>
+
+			<div class="outer">
+				<div class="inner">
+					<div style="padding:10px;">
+						<input type="text" placeholder="text">
+						<input type="number" placeholder="number">
+						<select>
+							<option>셀렉트 옵션01</option>
+							<option>셀렉트 옵션02</option>
+							<option>셀렉트 옵션3</option>
+						</select>
+					</div>
+					<div style="padding:10px;">
+						<input type="text" placeholder="text" class="error">
+						<input type="number" placeholder="number" class="error">
+						<select class="error">
+							<option>셀렉트 옵션01</option>
+							<option>셀렉트 옵션02</option>
+							<option>셀렉트 옵션3</option>
+						</select>
+					</div>
+					<div style="padding:10px;">
+						<input type="text" placeholder="text" readonly value="readonly">
+						<input type="number" placeholder="number" readonly value="readonly">
+						<select readonly>
+							<option>readonly</option>
+							<option>셀렉트 옵션02</option>
+							<option>셀렉트 옵션3</option>
+						</select>
+					</div>
+					<textarea class="textareaAutoHeight" placeholder="지문을 입력해 주세요."></textarea>
+					<textarea class="textareaAutoHeight" placeholder="지문을 입력해 주세요." readonly>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). </textarea>
+				</div>
+			</div>
+
+			<div class="outer">
+				<div class="inner">
+					<div class="flexTest">
+						<ul class="flex">
+							<li>1.기본(지정 안했을시) : <span>flex:0 1 auto</span></li>
+							<li>1</li>
+							<li>1</li>
+							<li>1</li>
+						</ul>
+						<ul class="flex">
+							<li>2.글자의 넓이를 뺀 나머지 여백의 비율 : <span>flex:1 1 auto</span></li>
+							<li>2</li>
+							<li>2</li>
+							<li>2</li>
+						</ul>
+						<ul class="flex">
+							<li>3.정확한 비율 유지 : <span>flex:1 1 0, flex:1</span></li>
+							<li></li>
+							<li>3</li>
+							<li>3</li>
+						</ul>
+						<ul class="flex">
+							<li>4.정확한 비율 유지 : <span>flex:1 1 0, flex:1</span></li>
+							<li style="flex:2">this flex:2</li>
+							<li>3</li>
+							<li>3</li>
+						</ul>
+						<ul class="flex">
+							<li>5.최대 넓이를 가지고있다가 화면 비율에 따라서 줄어듬 : <span>flex:1 1 0</span></li>
+							<li>margin:auto;</li>
+							<li>3</li>
+							<li>4</li>
+						</ul>
+						<ul class="flex">
+							<li>6.최대 넓이를 가지고있다가 화면 비율에 따라서 줄어듬 : <span>flex:1 1 0</span></li>
+							<li>margin:auto;</li>
+							<li>3</li>
+							<li>4</li>
+						</ul>
+						<ul class="flex">
+							<li>7.최대 넓이를 가지고있다가 화면 비율에 따라서 줄어들다 태블릿이나 모바일에서 줄바꿈 : <span>flex:1 1 0</span></li>
+							<li>min-width</li>
+							<li>3</li>
+							<li>4</li>
+						</ul>
+						<ul class="flex">
+							<li>테스트 테스트 테스트</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+						</ul>
+						<ul class="flex">
+							<li>테스트 테스트 테스트</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+						</ul>
+
+						<ul class="flex last">
+							<li>이상윤 이상윤이상윤이상윤</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+						</ul>
+					</div>
+					<style>
+						.flexTest {margin:50px;border:1px solid red;}
+						.flexTest ul {display:flex; border:1px solid red; padding:0.7em; gap:0.7em;}
+						.flexTest ul li {border:1px solid #000; text-align:center; padding:5px 10px; box-sizing:border-box;}
+						.flexTest ul li span {color:red;}
+						.flexTest ul:nth-child(1) li {flex:0 1 auto; }/* 기본(지정 안했을시) */
+						.flexTest ul:nth-child(2) li {flex:1 1 auto;}/* 글자의 넓이를 뺀 나머지 여백의 비율 */
+						.flexTest ul:nth-child(3) li {flex:1 1 0;  flex:1;}/* 정확한 비율 유지 */
+						.flexTest ul:nth-child(4) li {flex:1 1 0;  flex:1;}/* 정확한 비율 유지 */
+
+						.flexTest ul:nth-child(5) li {flex:1 1 0; display:flex; justify-content:center; align-items:center;}/*  */
+						.flexTest ul:nth-child(5) li:nth-child(1) { flex:0 1 400px; background:#eee;}
+
+						.flexTest ul:nth-child(6) {align-content:stretch;}
+						.flexTest ul:nth-child(6) li {flex:1 1 0; margin:auto;}/*  */
+						.flexTest ul:nth-child(6) li:nth-child(1) { flex:0 1 400px; background:#eee;}
+
+						.flexTest ul:nth-child(7) {flex-wrap:wrap}
+						.flexTest ul:nth-child(7) li {flex:1 1 0; flex:1; min-width:100px}/*  */
+						.flexTest ul:nth-child(7) li:nth-child(1) { /* flex:0 1 300px; */ background:#eee;}
+
+						.flexTest ul:nth-child(8) li:nth-child(1) {flex:0 1 200px;background:#eee;}
+						.flexTest ul:nth-child(8) li:nth-child(3) {flex:1 1 0; background:#eee;}
+						.flexTest ul:nth-child(8) li:nth-child(4) {margin-left:auto;  flex:0 0 200px;}
+						.flexTest ul:nth-child(9) li:nth-child(1) {flex:0 1 200px;background:#eee;}
+						.flexTest ul:nth-child(9) li:nth-child(4) {margin-left:auto;  flex:0 0 200px;}
+						.flexTest ul.last {position:absolute; top:0; right:0; gap:0px;}
+						.flexTest ul.last li {padding:0;}
+					</style>
+				</div>
+			</div>
+
+			<div class="outer">
+				<div class="inner">
+					<div class="fontSizeTest">
+						<ul>
+							<li>font-size 디폴트입니다. (설정 안함) (<span></span>)</li>
+							<li style="font-size:0.8rem">"font-size:0.8rem" 입니다. (<span></span>)</li>
+							<li style="font-size:0.9rem">"font-size:0.9rem" 입니다. (<span></span>)</li>
+							<li style="font-size:1.0rem">"font-size:1.0rem" 입니다. (<span></span>)</li>
+							<li style="font-size:1.1rem">"font-size:1.1rem" 입니다. (<span></span>)</li>
+							<li style="font-size:1.2rem">"font-size:1.2rem" 입니다. (<span></span>)</li>
+							<li style="font-size:1.3rem">"font-size:1.3rem" 입니다. (<span></span>)</li>
+							<li style="font-size:1.4rem">"font-size:1.4rem" 입니다. (<span></span>)</li>
+							<li style="font-size:1.5rem">"font-size:1.5rem" 입니다. (<span></span>)</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- /#container -->
+
+
+
+
+
+
+
+		<hr />
+
+		<footer id="footer">
+			<address>주소</address>
+		</footer>
+	</div>
+	<!-- /#wrap -->
+
+	<!-- .layer 활성화시 클래스 active 추가해주시요 -->
+	<div id="layer" class="layer">
+		<div class="mask"></div>
+		<div class="inner">
+			<section class="test">
+				<header>
+					<h2>타이틀</h2>
+					<a class="close" onclick="layerClose(this); return false;">닫기</a>
+				</header>
+				<main>
+					내용이 들어갑니다. (1) <br>내용이 들어갑니다. (2)<br>내용이 들어갑니다. (1) <br>내용이 들어갑니다. (2)<br>내용이 들어갑니다. (1)
+					<br>내용이 들어갑니다. (2)<br>내용이 들어갑니다. (1) <br>내용이 들어갑니다. (2)<br>내용이 들어갑니다. (1) <br>내용이 들어갑니다. (2)<br>내용이 들어갑니다. (1)
+					<br>내용이 들어갑니다. (2)<br>내용이 들어갑니다. (1) <br>내용이 들어갑니다. (2)<br>내용이 들어갑니다. (1) <br>내용이 들어갑니다. (2)<br>내용이 들어갑니다. (1)
+					<br>내용이 들어갑니다. (2)<br>내용이 들어갑니다. (1) <br>내용이 들어갑니다. (2)<br>내용이 들어갑니다. (1) <br>내용이 들어갑니다. (2)<br>내용이 들어갑니다. (1)
+					<br>내용이 들어갑니다. (2)<br>
+				</main>
+				<footer>
+					<div class="btnWrap mt">
+						<a class="btnStyle bgEm wide" onclick="layerClose()">취소</a>
+						<a class="btnStyle bgActive wide" onclick="layerOpen('layer2')">확인</a>
+					</div>
+				</footer>
+			</section>
+		</div>
+	</div>
+	<!-- /.layer 활성화시 클래스 active 추가해주시요 -->
+
+	<!-- .alert 활성화시 클래스 active 추가해주시요 -->
+	<div style="z-index: 100002" id="layer2" class="layer">
+		<div class="mask"></div>
+		<div class="inner">
+			<section class="alert">
+				<main>
+					정말 나가시겠습니까? 3 <br> 작성하신 내용은 저장되지 않습니다.
+				</main>
+				<footer>
+					<div class="btnArea">
+						<a class="" onclick="layerClose(event)">취소</a> <a class="active" onclick="layerOpen('layer3', event)">확인</a>
+					</div>
+				</footer>
+			</section>
+		</div>
+	</div>
+	<!-- /.alert 활성화시 클래스 active 추가해주시요 -->
+
+	<!-- .alert 활성화시 클래스 active 추가해주시요 -->
+	<div style="z-index: 100004" id="layer3" class="layer">
+		<div class="mask"></div>
+		<div class="inner">
+			<section class="alert">
+				<main>
+					정말 나가시겠습니까? <br> 작성하신 내용은 저장되지 않습니다.
+				</main>
+				<footer>
+					<div class="btnArea">
+						<a class="" onclick="layerClose(event)">취소</a> <a class="active" onclick="layerClose(event)">확인</a>
+					</div>
+				</footer>
+			</section>
+		</div>
+	</div>
+	<!-- /.alert 활성화시 클래스 active 추가해주시요 -->
+	</style>
+</body>
+</html>

@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/* RESET */
+::-ms-clear, ::-ms-reveal { display: none; }
+select::-ms-expand { appearance: none; display: none; }
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button { appearance: none; margin: 0; }
+::placeholder, ::-webkit-input-placeholder { opacity: 1 !important; color: #969696; }
+
+/*  */
+input[type="text"], input[type="password"], input[type="tel"], input[type="time"], input[type="search"], input[type="email"], input[type="file"], input[type="url"], input[type="number"], input[type="date"], select, textarea { height: 50px; vertical-align: middle; box-sizing: border-box; border: solid 1px #E6E6E6; padding: 0 16px; border-radius: var(--br); transition: border-color 0.2s; }
+textarea { padding-top: 15px; padding-bottom: 15px; resize: none; pointer-events: visible !important; }
+
+/*  */
+input[type="text"]:hover, input[type="password"]:hover, input[type="tel"]:hover, input[type="time"]:hover, input[type="search"]:hover, input[type="email"]:hover, input[type="file"]:hover, input[type="url"]:hover, input[type="number"]:hover, input[type="date"]:hover, select:hover, textarea:hover {}
+input[type="text"]:focus, input[type="password"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="search"]:focus, input[type="email"]:focus, input[type="file"]:focus, input[type="url"]:focus, input[type="number"]:focus, input[type="date"]:focus, select:focus, textarea:focus { outline: 0; border-color: #C6C6C6;}
+select { appearance: none; /* text-indent: 0.01px; */ white-space: nowrap; overflow: hidden; text-overflow: ellipsis; background: #fff url(../images/form/bg_select.svg) no-repeat right 16px center; padding-right: 45px; cursor: pointer; position: relative;}
+select:focus {background: #fff url(../images/form/bg_select_active.svg) no-repeat right 16px center;}
+input:read-only, textarea:read-only, select[readonly] { background-color: #F8F8F8; pointer-events: none;}
+input.active:read-only, textarea.active:read-only, select.active[readonly] {background-color: #fff;}
+input.error, textarea.error, select.error { border-color: var(--error);}
+textarea.textareaAutoHeight {width: 100%;}
+
+/* CHECK STYLE */
+/* .labelWrap {display: flex; gap: 40px;} */
+.label {display: inline-flex; align-items: center; gap: 8px; user-select:none; cursor: pointer; vertical-align: top; line-height: 1;}
+/* .label ~ .label {margin-left: 40px;} */
+.label input {appearance: none; border: 1px solid #E6E6E6; width: 24px; height: 24px; border-radius: 4px; cursor: pointer; background: #fff;}
+.label input:checked {background:var(--ac01) url(../images/form/bg_checkbox.svg) center center no-repeat; border-color: var(--ac01);}
+.label input:disabled {background-color: #E9E9E9; border-color: #E6E6E6;}
+/* .label input[type="radio"] {border-radius: 999px;} */
+/* .label input[type="radio"]:checked {background:var(--ac01) url(../images/form/bg_radio.svg) center center no-repeat; border-color: var(--ac01);} */
+/* .label input[type="radio"]:disabled {background-color: #E9E9E9; border-color: #E6E6E6;} */
+.label:has(input:disabled) {cursor: default;}
+.label:has(input:disabled) * {cursor: default; color: #C6C6C6 !important;}
+
+/*  */
+.btnWrap { display: flex; gap: 8px; }
+.btnWrap.mt { margin-top: 24px; }
+.btnWrap a {min-width: 144px;}
+a.btnStyle { display: inline-flex; align-items: center; justify-content: center; background: var(--ac01); border: 1px solid var(--ac01); border-radius: var(--br); height: 50px; padding: 0 16px; color: #fff; font-weight: 700; box-sizing: border-box;}
+a.btnStyle.bd {background: #fff !important; color: var(--ac01); border: 1px solid var(--ac01);}
+a.btnStyle.em {background: var(--ec01); border: 1px solid var(--ec01);}
+a.btnStyle.em.bd {color: var(--ec01);}
+a.btnStyle.bgGray {background: #727171; color: #fff; border: 1px solid #727171;}
+a.btnStyle.bgGray.bd {color: #727171;}
+
+a.btnStyle.search {}
+/*
+a.btnStyle.h56 { height: 56px; font-size: 18px; }
+a.btnStyle.wide { display: flex; flex: 1; }
+a.btnStyle.disable { background: #C6C6C6; pointer-events: none; }
+a.btnStyle.bgGray { background: #F6F6F6;color: #565656; }
+a.btnStyle.bgWh { background: #fff;color: var(--ac01); }
+a.btnStyle.bgEm { background: #FFE8E8;color: var(--ac01); }
+*/

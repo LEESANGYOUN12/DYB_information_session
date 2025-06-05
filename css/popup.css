@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+/* common */
+.layer {position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 10000; word-break: keep-all; display: none;}
+.layer.active {display: block;}
+.layer .mask {position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); opacity: 0; z-index: 9998;}
+.layer.active .mask {animation: layerOpenMask .4s forwards linear;}
+.layer > .inner {position: fixed; top: 0; left: 0; width: 100%; height: 100%; box-sizing: border-box; padding: var(--sp); z-index: 10000; overflow: auto; flex-wrap: wrap; display: flex; z-index: 9999;}
+.layer > .inner > section {margin: auto; /* background: #fff; */}
+.layer.active > .inner > section {opacity:0; animation: layerOpen .1s .3s forwards linear;}
+@keyframes layerOpen {
+	0% {opacity: 0.5;}
+	100% {opacity: 1;}
+}
+@keyframes layerOpenMask {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+@media only all and (max-width: 760px) {/* 모바일 사이드 여백 */
+	.layer > .inner {padding: 24px var(--sp);}
+}
+
+
+/*  */
+.layer header {position: relative; margin-bottom: 20px;}
+.layer header h2 {font-weight: 700; font-size: 18px; color: #fff;}
+.layer header .layerClose {text-indent: -9999px; position: absolute; width: 24px; height: 24px; top: 0; right: 0; background: url(../images/popup/btn_layer_close.svg) 0 0 no-repeat;}
+/*  */
+.layer main {padding: 32px; background: #fff;}
+/*  */
+.layer footer {display: flex;}
+.layer footer a {flex: 1; display: flex; align-items: center; justify-content: center; height: 56px; font-weight: 700; background: var(--bd02); color: var(--tc01); overflow: hidden;}
+.layer footer a.active {background: var(--ac01); color: #fff;}
+.layer footer a span {padding: 0 24px; overflow: hidden; white-space: nowrap; word-break: break-all; text-overflow: ellipsis;}
+
+/* width : 가변, min-width : 고정 */
+.test {width: 343px; max-height: 605px; height: 100%; box-sizing: border-box;  display: flex; flex-direction: column;}
+.test > main {overflow: auto; flex: 1;}
+
+/* .alert */
+.alert {width: 343px;}
+.alert h3 {font-size: 18px; font-weight: 700; margin-bottom: 16px;}
+.alert p {color: #565656;}
+.alert p ~ p {margin-top: 8px;}
+
+/* 로딩 */
+.loading {position: fixed; top: 0; bottom: 0; left: 0; width: 100%; box-sizing: border-box; z-index: 20000; background: rgba(0,0,0,0.5); display: none;}
+.loading.active {display: flex;}
+.loading > section { margin: auto; border-radius: 50%; padding: 24px; box-sizing: border-box; animation: spin 2s linear infinite; width: 40px; height: 40px; text-indent: -9999px; border: 4px solid var(--ac01); border-bottom: 4px solid transparent; overflow: hidden;}
+@keyframes spin {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(360deg);}
+}

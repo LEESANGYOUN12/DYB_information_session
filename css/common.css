@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+
+/* 로그인 백그라운드 */
+:has(#wrap) {
+	body {background: #F8F8F8;}
+}
+
+/* COMMON */
+#wrap {max-width: var(--wrapWidth); min-height: calc(var(--100vh)); margin: 0 auto; background: #fff; box-sizing: border-box;}
+#wrap:has(#footerBtn) {padding-bottom: var(--footerBtnHeight);}
+
+/* 헤더 */
+#header {background: #FFF; position: sticky; top:0; z-index:1000; height: var(--headerHeight); padding: 0 24px; display: flex; align-items: center; justify-content: space-between;}
+#header h1 a {display: block; width: 32px; height: 38px; background: var(--url) center center no-repeat; text-indent: -9999px;}
+#header nav ul {display: flex; gap: 16px; font-size: 16px; font-weight: 700;}
+#header nav ul a {color: var(--tc02);}
+#header nav ul a.active {color: var(--defaultColor);}
+#header .btnShare {display: block; text-indent: -9999px; width: 24px; height: 24px; background: url(../images/common/btn_share.svg) center center no-repeat;}
+
+/* 하단 버튼 고정 */
+#footerBtn {position: fixed; left: 0; bottom: 0; width: 100%;}
+#footerBtn .inner {max-width: var(--wrapWidth); margin: 0 auto; display: flex; overflow: hidden;}
+#footerBtn .inner a {flex: 1; display: flex; align-items: center; justify-content: center; background: var(--ac01); height: var(--footerBtnHeight); color: #fff; font-size: 18px; min-width: 0;}
+#footerBtn .inner a.disabled {pointer-events: none; background: var(--bd02); cursor: default;}
+#footerBtn .inner a.disabled.active {pointer-events: visible;}
+#footerBtn .inner a span {padding: 0 24px; overflow: hidden; white-space: nowrap; word-break: break-all; text-overflow: ellipsis;}
+
+/* #container */
+#container {padding: 8px 24px 80px 24px;}
+#container .titArea {display: flex; justify-content: space-between; gap: 16px; margin-bottom: 32px; align-items: center;}
+#container .titArea h2 {font-size: 26px; font-weight: 700;}
+#container .titArea p.required {font-size: 15px; color: var(--error);}
+
+/* .tab
+.btnTab a.active {color: red;}
+.tabArea > section {display: none;}
+.tabArea > section.active {display: block;}
+*/
